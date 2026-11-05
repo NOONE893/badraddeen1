@@ -2668,73 +2668,194 @@
     </div>
   </section>
 
-  <!-- ═══════════════════ Portfolio ═══════════════════ -->
+    <!-- ═══════════════════ Portfolio ═══════════════════ -->
   <section id="portfolio" class="section">
     <div class="container">
       <div class="section-header reveal">
         <h2 class="section-title">أعمالنا</h2>
-        <p class="section-subtitle">نماذج من مشاريع حقيقية</p>
+        <p class="section-subtitle">نماذج من مشاريع حقيقية — اسحب يميناً ويساراً لاستعراضها</p>
       </div>
 
-      <div class="portfolio-grid">
-        <!-- TODO: أضف screenshots حقيقية في /screenshots/ -->
-        <div class="project-card reveal">
-          <div class="project-screenshot">
-            <div class="screenshot-fallback">QERAN</div>
-            <button type="button" class="shot-link" data-preview="https://qeran.lovable.app" data-title="Qeran" aria-label="معاينة Qeran">
-              <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://qeran.lovable.app" data-alt-src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fqeran.lovable.app?w=1200&h=750" alt="لقطة شاشة حية لموقع Qeran" loading="lazy" onerror="shotFallback(this)" />
-            </button>
-            <span class="live-badge">Live</span>
-          </div>
-          <div class="project-body">
-            <div class="project-tag">PROJECT / 01</div>
-            <h3 class="project-title">Qeran</h3>
-            <p class="project-desc">منصة تجمع الخدمات في مكان واحد بواجهة عصرية وتنقّل بسيط وأداء سريع على الجوال والحاسب.</p>
-            <div class="project-actions">
-              <button type="button" class="project-preview" data-preview="https://qeran.lovable.app" data-title="Qeran">👁 معاينة مباشرة</button>
-              <a class="btn btn-primary project-request" href="https://wa.me/966568694883?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D8%A7%D9%8B%20%D9%85%D8%AB%D9%84%20%D9%87%D8%B0%D8%A7%3A%20Qeran" target="_blank" rel="noopener">أريد مشروعاً مثل هذا</a>
-            </div>
-          </div>
-        </div>
+      <div class="portfolio-slider">
+        <button type="button" class="slider-btn prev" id="sliderPrev" aria-label="السابق">›</button>
+        <button type="button" class="slider-btn next" id="sliderNext" aria-label="التالي">‹</button>
 
-        <div class="project-card reveal">
-          <div class="project-screenshot">
-            <div class="screenshot-fallback">A3RTA</div>
-            <button type="button" class="shot-link" data-preview="https://a3rta.lovable.app" data-title="حراج عرطة" aria-label="معاينة حراج عرطة">
-              <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://a3rta.lovable.app" data-alt-src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fa3rta.lovable.app?w=1200&h=750" alt="لقطة شاشة حية لموقع حراج عرطة" loading="lazy" onerror="shotFallback(this)" />
-            </button>
-            <span class="live-badge">Live</span>
-          </div>
-          <div class="project-body">
-            <div class="project-tag">PROJECT / 02</div>
-            <h3 class="project-title">حراج عرطة</h3>
-            <p class="project-desc">سوق منظم بأقسام واضحة وبحث سريع يجمع البائعين والمشترين لتصفح مريح على الجوال والحاسب.</p>
-            <div class="project-actions">
-              <button type="button" class="project-preview" data-preview="https://a3rta.lovable.app" data-title="حراج عرطة">👁 معاينة مباشرة</button>
-              <a class="btn btn-primary project-request" href="https://wa.me/966568694883" target="_blank" rel="noopener">أريد مشروعاً مثل هذا</a>
-            </div>
-          </div>
-        </div>
+        <div class="portfolio-grid" id="portfolioTrack" dir="rtl">
 
-        <div class="project-card reveal">
-          <div class="project-screenshot">
-            <div class="screenshot-fallback">JAWDAWA</div>
-            <button type="button" class="shot-link" data-preview="https://jawdawa.lovable.app" data-title="Jawdawa" aria-label="معاينة Jawdawa">
-              <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://jawdawa.lovable.app" data-alt-src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fjawdawa.lovable.app?w=1200&h=750" alt="لقطة شاشة حية لموقع Jawdawa" loading="lazy" onerror="shotFallback(this)" />
-            </button>
-            <span class="live-badge">Live</span>
-          </div>
-          <div class="project-body">
-            <div class="project-tag">PROJECT / 03</div>
-            <h3 class="project-title">Jawdawa</h3>
-            <p class="project-desc">تطبيق ويب متجاوب يجمع العمليات في واجهة واحدة لتقليل وقت التنفيذ وتجربة استخدام أسرع وأوضح.</p>
-            <div class="project-actions">
-              <button type="button" class="project-preview" data-preview="https://jawdawa.lovable.app" data-title="Jawdawa">👁 معاينة مباشرة</button>
-              <a class="btn btn-primary project-request" href="https://wa.me/966568694883" target="_blank" rel="noopener">أريد مشروعاً مثل هذا</a>
+          <div class="project-card">
+            <div class="project-screenshot">
+              <div class="screenshot-fallback">QERAN</div>
+              <button type="button" class="shot-link" data-preview="https://qeran.lovable.app" data-title="Qeran" aria-label="معاينة Qeran">
+                <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://qeran.lovable.app" data-alt-src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fqeran.lovable.app?w=1200&h=750" alt="لقطة شاشة حية لموقع Qeran" loading="lazy" onerror="shotFallback(this)" />
+              </button>
+              <span class="live-badge">Live</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tag">PROJECT / 01</div>
+              <h3 class="project-title">Qeran</h3>
+              <p class="project-desc">منصة تجمع الخدمات في مكان واحد بواجهة عصرية وتنقّل بسيط وأداء سريع على الجوال والحاسب.</p>
+              <div class="project-actions">
+                <button type="button" class="project-preview" data-preview="https://qeran.lovable.app" data-title="Qeran">👁 معاينة مباشرة</button>
+                <a class="btn btn-primary project-request" href="https://wa.me/966568694883" target="_blank" rel="noopener">أريد مشروعاً مثل هذا</a>
+              </div>
             </div>
           </div>
+
+          <div class="project-card">
+            <div class="project-screenshot">
+              <div class="screenshot-fallback">SWEET QUEEN</div>
+              <button type="button" class="shot-link" data-preview="https://sweetqueencake.lovable.app" data-title="سويت كوين كيك" aria-label="معاينة سويت كوين كيك">
+                <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://sweetqueencake.lovable.app" data-alt-src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fsweetqueencake.lovable.app?w=1200&h=750" alt="لقطة شاشة حية لموقع سويت كوين كيك" loading="lazy" onerror="shotFallback(this)" />
+              </button>
+              <span class="live-badge">Live</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tag">PROJECT / 02</div>
+              <h3 class="project-title">سويت كوين كيك</h3>
+              <p class="project-desc">متجر كيك وحلويات بتصفح سهل وسلس، مع سلة مشتريات ودفع إلكتروني.</p>
+              <div class="project-actions">
+                <button type="button" class="project-preview" data-preview="https://sweetqueencake.lovable.app" data-title="سويت كوين كيك">👁 معاينة مباشرة</button>
+                <a class="btn btn-primary project-request" href="https://wa.me/966568694883" target="_blank" rel="noopener">أريد مشروعاً مثل هذا</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-screenshot">
+              <div class="screenshot-fallback">A3RTA</div>
+              <button type="button" class="shot-link" data-preview="https://a3rta.lovable.app" data-title="حراج عرطة" aria-label="معاينة حراج عرطة">
+                <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://a3rta.lovable.app" data-alt-src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fa3rta.lovable.app?w=1200&h=750" alt="لقطة شاشة حية لموقع حراج عرطة" loading="lazy" onerror="shotFallback(this)" />
+              </button>
+              <span class="live-badge">Live</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tag">PROJECT / 03</div>
+              <h3 class="project-title">حراج عرطة</h3>
+              <p class="project-desc">سوق منظم بأقسام واضحة وبحث سريع يجمع البائعين والمشترين لتصفح مريح على الجوال والحاسب.</p>
+              <div class="project-actions">
+                <button type="button" class="project-preview" data-preview="https://a3rta.lovable.app" data-title="حراج عرطة">👁 معاينة مباشرة</button>
+                <a class="btn btn-primary project-request" href="https://wa.me/966568694883" target="_blank" rel="noopener">أريد مشروعاً مثل هذا</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-screenshot">
+              <div class="screenshot-fallback">JAWDAWA</div>
+              <button type="button" class="shot-link" data-preview="https://jawdawa.lovable.app" data-title="Jawdawa" aria-label="معاينة Jawdawa">
+                <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://jawdawa.lovable.app" data-alt-src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fjawdawa.lovable.app?w=1200&h=750" alt="لقطة شاشة حية لموقع Jawdawa" loading="lazy" onerror="shotFallback(this)" />
+              </button>
+              <span class="live-badge">Live</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tag">PROJECT / 04</div>
+              <h3 class="project-title">Jawdawa</h3>
+              <p class="project-desc">تطبيق ويب متجاوب يجمع العمليات في واجهة واحدة لتقليل وقت التنفيذ وتجربة استخدام أسرع وأوضح.</p>
+              <div class="project-actions">
+                <button type="button" class="project-preview" data-preview="https://jawdawa.lovable.app" data-title="Jawdawa">👁 معاينة مباشرة</button>
+                <a class="btn btn-primary project-request" href="https://wa.me/966568694883" target="_blank" rel="noopener">أريد مشروعاً مثل هذا</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-screenshot">
+              <div class="screenshot-fallback">AYMN</div>
+              <button type="button" class="shot-link" data-preview="https://aymnghanem.lovable.app" data-title="Aymn Ghanem" aria-label="معاينة Aymn Ghanem">
+                <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://aymnghanem.lovable.app" data-alt-src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Faymnghanem.lovable.app?w=1200&h=750" alt="لقطة شاشة حية لموقع aymn Ghanem" loading="lazy" onerror="shotFallback(this)" />
+              </button>
+              <span class="live-badge">Live</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tag">PROJECT / 05</div>
+              <h3 class="project-title">Aymn Ghanem</h3>
+              <p class="project-desc">موقع احترافي بتصميم عصري وواجهة واضحة تعرض الخدمات والتواصل بسهولة على كل الأجهزة.</p>
+              <div class="project-actions">
+                <button type="button" class="project-preview" data-preview="https://aymnghanem.lovable.app" data-title="Aymn Ghanem">👁 معاينة مباشرة</button>
+                <a class="btn btn-primary project-request" href="https://wa.me/966568694883" target="_blank" rel="noopener">أريد مشروعاً مثل هذا</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-screenshot">
+              <div class="screenshot-fallback">BADRADDEEN</div>
+              <button type="button" class="shot-link" data-preview="https://badraddeen.vercel.app" data-title="Badraddeen" aria-label="معاينة Badraddeen">
+                <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://badraddeen.vercel.app" data-alt-src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fbadraddeen.vercel.app?w=1200&h=750" alt="لقطة شاشة حية لموقع Badraddeen" loading="lazy" onerror="shotFallback(this)" />
+              </button>
+              <span class="live-badge">Live</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tag">PROJECT / 06</div>
+              <h3 class="project-title">Badraddeen</h3>
+              <p class="project-desc">موقع بواجهة سريعة ونظيفة وتنقّل بسيط، مبني على أحدث التقنيات لأداء ممتاز.</p>
+              <div class="project-actions">
+                <button type="button" class="project-preview" data-preview="https://badraddeen.vercel.app" data-title="Badraddeen">👁 معاينة مباشرة</button>
+                <a class="btn btn-primary project-request" href="https://wa.me/966568694883" target="_blank" rel="noopener">أريد مشروعاً مثل هذا</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-screenshot">
+              <div class="screenshot-fallback">WASMNAJD</div>
+              <button type="button" class="shot-link" data-preview="https://wasmnajd.lovable.app" data-title="Wasmnajd" aria-label="معاينة Wasmnajd">
+                <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://wasmnajd.lovable.app" data-alt-src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwasmnajd.lovable.app?w=1200&h=750" alt="لقطة شاشة حية لموقع Wasmnajd" loading="lazy" onerror="shotFallback(this)" />
+              </button>
+              <span class="live-badge">Live</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tag">PROJECT / 07</div>
+              <h3 class="project-title">Wasmnajd</h3>
+              <p class="project-desc">موقع متجاوب بتصميم جذاب وهوية واضحة يعرّف بالخدمات ويسهّل التواصل مع العملاء.</p>
+              <div class="project-actions">
+                <button type="button" class="project-preview" data-preview="https://wasmnajd.lovable.app" data-title="Wasmnajd">👁 معاينة مباشرة</button>
+                <a class="btn btn-primary project-request" href="https://wa.me/966568694883" target="_blank" rel="noopener">أريد مشروعاً مثل هذا</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-screenshot">
+              <div class="screenshot-fallback">DENTIST</div>
+              <button type="button" class="shot-link" data-preview="https://dentistmohammed.lovable.app" data-title="Dentist Mohammed" aria-label="معاينة Dentist Mohammed">
+                <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://dentistmohammed.lovable.app" data-alt-src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fdentistmohammed.lovable.app?w=1200&h=750" alt="لقطة شاشة حية لموقع Dentist Mohammed" loading="lazy" onerror="shotFallback(this)" />
+              </button>
+              <span class="live-badge">Live</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tag">PROJECT / 08</div>
+              <h3 class="project-title">Dentist Mohammed</h3>
+              <p class="project-desc">موقع عيادة أسنان يعرض الخدمات والتعريف بالطبيب ويتيح للمرضى التواصل والحجز بسهولة.</p>
+              <div class="project-actions">
+                <button type="button" class="project-preview" data-preview="https://dentistmohammed.lovable.app" data-title="Dentist Mohammed">👁 معاينة مباشرة</button>
+                <a class="btn btn-primary project-request" href="https://wa.me/966568694883" target="_blank" rel="noopener">أريد مشروعاً مثل هذا</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-screenshot">
+              <div class="screenshot-fallback">TOP PLATFORM</div>
+              <button type="button" class="shot-link" data-preview="https://top-platform.lovable.app/" data-title="Top Platform" aria-label="معاينة Top Platform">
+                <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://top-platform.lovable.app/" data-alt-src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Ftop-platform.lovable.app?w=1200&h=750" alt="لقطة شاشة حية لموقع Top Platform" loading="lazy" onerror="shotFallback(this)" />
+              </button>
+              <span class="live-badge">Live</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tag">PROJECT / 09</div>
+              <h3 class="project-title">Top Platform</h3>
+              <p class="project-desc">منصة متكاملة بواجهة عصرية وتجربة استخدام سلسة تجمع الميزات الأساسية في مكان واحد.</p>
+              <div class="project-actions">
+                <button type="button" class="project-preview" data-preview="https://top-platform.lovable.app/" data-title="Top Platform">👁 معاينة مباشرة</button>
+                <a class="btn btn-primary project-request" href="https://wa.me/966568694883" target="_blank" rel="noopener">أريد مشروعاً مثل هذا</a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+      <p class="slider-hint">→ اسحب لليسار أو استخدم الأسهم لاستعراض المزيد ←</p>
     </div>
   </section>
 
