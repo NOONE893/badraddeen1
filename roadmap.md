@@ -1,0 +1,13 @@
+# Requested changes
+- [ ] Add a titled image for each article and verified useful external references; retain descriptive internal links and improve keyword relevance without ranking guarantees.
+- [ ] Add a matching Arabic blog index and ten complete independent articles, with navigation, author, FAQ, WhatsApp and related links.
+- [ ] Add per-page search/share metadata, structured data, centralized public domain and updated sitemap/robots; verify server-rendered full article HTML.
+- [ ] Verify desktop/mobile blog and original site, then publish and provide final page links.
+- [x] Add project-specific WhatsApp buttons and the 14-day free revision guarantee; verify messages.
+- [x] Center footer rights on desktop/mobile, clarify email icon and replace platform favicon with existing logo.
+- [x] Add mouse-driven 3D card tilt, rotating typed role text and active-section navigation; verify behavior.
+- [x] Show the existing back-to-top control on mobile and verify it.
+- [x] Refine search metadata using existing services without ranking guarantees.
+- [x] Apply only the specified heading CSS fixes; verify mobile and desktop.
+- [x] Keep project screenshots and preview buttons opening a sandboxed in-page modal; remove external link controls and visible platform-name text.
+- [x] Verify all three project previews and modal close actions without changing the remaining site.

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://badraddeen1.lovable.app/sitemap.xml
